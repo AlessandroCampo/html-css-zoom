@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* .web-app {
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.user-container {
+    position: relative;
+    flex-basis: calc(100% / 7 - 0.2em);
+}
+
+.user-container img {
+    display: block;
+    width: 100%;
+}
+
+.web-app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    background-color: rgba(97, 109, 122, 0.5);
+    padding: 5px;
+}
+
+/* .name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    background-color: rgba(97, 109, 122, 0.7);
+    padding: 5px;
+} */
+
+.name::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f131";
+    padding-right: 5px;
+}
+
+
+.container {
+    width: 90vw;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    width: 90vw;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+body {
+    background-color: black;
+}
+
+.command-bar {
+    background-color: #222222;
+}
+
+.command-bar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    /* padding: 20px; */
+}
+
+
+.command-bar i {
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.fa-display {
+    color: lime;
+}
+
+.left,
+.center {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.right {
+    display: flex;
+    background-color: #4a4a4a;
+    color: red;
+    align-items: center;
+    padding: 30px;
+}
+
+.left .icon-container {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 15px;
+}
+
+.fa-solid.fa-chevron-up {
+    font-size: 10px;
+}
